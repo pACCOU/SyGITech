@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ds_liste_des_appel_par_client" msprop:Generator_UserTableName="ds_liste_des_appel_par_client" msprop:Generator_RowDeletedName="ds_liste_des_appel_par_clientRowDeleted" msprop:Generator_RowChangedName="ds_liste_des_appel_par_clientRowChanged" msprop:Generator_RowClassName="ds_liste_des_appel_par_clientRow" msprop:Generator_RowChangingName="ds_liste_des_appel_par_clientRowChanging" msprop:Generator_RowEvArgName="ds_liste_des_appel_par_clientRowChangeEvent" msprop:Generator_RowEvHandlerName="ds_liste_des_appel_par_clientRowChangeEventHandler" msprop:Generator_TableClassName="ds_liste_des_appel_par_clientDataTable" msprop:Generator_TableVarName="tableds_liste_des_appel_par_client" msprop:Generator_RowDeletingName="ds_liste_des_appel_par_clientRowDeleting" msprop:Generator_TablePropName="ds_liste_des_appel_par_client">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumCli" msprop:Generator_UserColumnName="NumCli" msprop:Generator_ColumnVarNameInTable="columnNumCli" msprop:Generator_ColumnPropNameInRow="NumCli" msprop:Generator_ColumnPropNameInTable="NumCliColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NomCli" msprop:Generator_UserColumnName="NomCli" msprop:Generator_ColumnVarNameInTable="columnNomCli" msprop:Generator_ColumnPropNameInRow="NomCli" msprop:Generator_ColumnPropNameInTable="NomCliColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AdresCli" msprop:Generator_UserColumnName="AdresCli" msprop:Generator_ColumnVarNameInTable="columnAdresCli" msprop:Generator_ColumnPropNameInRow="AdresCli" msprop:Generator_ColumnPropNameInTable="AdresCliColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TelCli" msprop:Generator_UserColumnName="TelCli" msprop:Generator_ColumnVarNameInTable="columnTelCli" msprop:Generator_ColumnPropNameInRow="TelCli" msprop:Generator_ColumnPropNameInTable="TelCliColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LieuInterv" msprop:Generator_UserColumnName="LieuInterv" msprop:Generator_ColumnVarNameInTable="columnLieuInterv" msprop:Generator_ColumnPropNameInRow="LieuInterv" msprop:Generator_ColumnPropNameInTable="LieuIntervColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumAppel" msprop:Generator_UserColumnName="NumAppel" msprop:Generator_ColumnVarNameInTable="columnNumAppel" msprop:Generator_ColumnPropNameInRow="NumAppel" msprop:Generator_ColumnPropNameInTable="NumAppelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NomTech" msprop:Generator_UserColumnName="NomTech" msprop:Generator_ColumnVarNameInTable="columnNomTech" msprop:Generator_ColumnPropNameInRow="NomTech" msprop:Generator_ColumnPropNameInTable="NomTechColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PrenomTech" msprop:Generator_UserColumnName="PrenomTech" msprop:Generator_ColumnVarNameInTable="columnPrenomTech" msprop:Generator_ColumnPropNameInRow="PrenomTech" msprop:Generator_ColumnPropNameInTable="PrenomTechColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="factures" msprop:Generator_UserTableName="factures" msprop:Generator_RowDeletedName="facturesRowDeleted" msprop:Generator_TableClassName="facturesDataTable" msprop:Generator_RowChangedName="facturesRowChanged" msprop:Generator_RowClassName="facturesRow" msprop:Generator_RowChangingName="facturesRowChanging" msprop:Generator_RowEvArgName="facturesRowChangeEvent" msprop:Generator_RowEvHandlerName="facturesRowChangeEventHandler" msprop:Generator_TablePropName="factures" msprop:Generator_TableVarName="tablefactures" msprop:Generator_RowDeletingName="facturesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumFich" msprop:Generator_UserColumnName="NumFich" msprop:Generator_ColumnPropNameInRow="NumFich" msprop:Generator_ColumnVarNameInTable="columnNumFich" msprop:Generator_ColumnPropNameInTable="NumFichColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DatFich" msprop:Generator_UserColumnName="DatFich" msprop:Generator_ColumnPropNameInRow="DatFich" msprop:Generator_ColumnVarNameInTable="columnDatFich" msprop:Generator_ColumnPropNameInTable="DatFichColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CodInterv" msprop:Generator_UserColumnName="CodInterv" msprop:Generator_ColumnPropNameInRow="CodInterv" msprop:Generator_ColumnVarNameInTable="columnCodInterv" msprop:Generator_ColumnPropNameInTable="CodIntervColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TypINterv" msprop:Generator_UserColumnName="TypINterv" msprop:Generator_ColumnPropNameInRow="TypINterv" msprop:Generator_ColumnVarNameInTable="columnTypINterv" msprop:Generator_ColumnPropNameInTable="TypINtervColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DatInterv" msprop:Generator_UserColumnName="DatInterv" msprop:Generator_ColumnPropNameInRow="DatInterv" msprop:Generator_ColumnVarNameInTable="columnDatInterv" msprop:Generator_ColumnPropNameInTable="DatIntervColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CodTach" msprop:Generator_UserColumnName="CodTach" msprop:Generator_ColumnPropNameInRow="CodTach" msprop:Generator_ColumnVarNameInTable="columnCodTach" msprop:Generator_ColumnPropNameInTable="CodTachColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LibTach" msprop:Generator_UserColumnName="LibTach" msprop:Generator_ColumnPropNameInRow="LibTach" msprop:Generator_ColumnVarNameInTable="columnLibTach" msprop:Generator_ColumnPropNameInTable="LibTachColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DatFact" msprop:Generator_UserColumnName="DatFact" msprop:Generator_ColumnPropNameInRow="DatFact" msprop:Generator_ColumnVarNameInTable="columnDatFact" msprop:Generator_ColumnPropNameInTable="DatFactColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Dureff" msprop:Generator_UserColumnName="Dureff" msprop:Generator_ColumnPropNameInRow="Dureff" msprop:Generator_ColumnVarNameInTable="columnDureff" msprop:Generator_ColumnPropNameInTable="DureffColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Montant" msprop:Generator_UserColumnName="Montant" msprop:Generator_ColumnPropNameInRow="Montant" msprop:Generator_ColumnVarNameInTable="columnMontant" msprop:Generator_ColumnPropNameInTable="MontantColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="périodes_de_garanties" msprop:Generator_UserTableName="périodes_de_garanties" msprop:Generator_RowDeletedName="périodes_de_garantiesRowDeleted" msprop:Generator_TableClassName="périodes_de_garantiesDataTable" msprop:Generator_RowChangedName="périodes_de_garantiesRowChanged" msprop:Generator_RowClassName="périodes_de_garantiesRow" msprop:Generator_RowChangingName="périodes_de_garantiesRowChanging" msprop:Generator_RowEvArgName="périodes_de_garantiesRowChangeEvent" msprop:Generator_RowEvHandlerName="périodes_de_garantiesRowChangeEventHandler" msprop:Generator_TablePropName="périodes_de_garanties" msprop:Generator_TableVarName="tablepériodes_de_garanties" msprop:Generator_RowDeletingName="périodes_de_garantiesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodInterv" msprop:Generator_UserColumnName="CodInterv" msprop:Generator_ColumnPropNameInRow="CodInterv" msprop:Generator_ColumnVarNameInTable="columnCodInterv" msprop:Generator_ColumnPropNameInTable="CodIntervColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TypINterv" msprop:Generator_UserColumnName="TypINterv" msprop:Generator_ColumnPropNameInRow="TypINterv" msprop:Generator_ColumnVarNameInTable="columnTypINterv" msprop:Generator_ColumnPropNameInTable="TypINtervColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DatInterv" msprop:Generator_UserColumnName="DatInterv" msprop:Generator_ColumnPropNameInRow="DatInterv" msprop:Generator_ColumnVarNameInTable="columnDatInterv" msprop:Generator_ColumnPropNameInTable="DatIntervColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumCli" msprop:Generator_UserColumnName="NumCli" msprop:Generator_ColumnPropNameInRow="NumCli" msprop:Generator_ColumnVarNameInTable="columnNumCli" msprop:Generator_ColumnPropNameInTable="NumCliColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NomCli" msprop:Generator_UserColumnName="NomCli" msprop:Generator_ColumnPropNameInRow="NomCli" msprop:Generator_ColumnVarNameInTable="columnNomCli" msprop:Generator_ColumnPropNameInTable="NomCliColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AdresCli" msprop:Generator_UserColumnName="AdresCli" msprop:Generator_ColumnPropNameInRow="AdresCli" msprop:Generator_ColumnVarNameInTable="columnAdresCli" msprop:Generator_ColumnPropNameInTable="AdresCliColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TelCli" msprop:Generator_UserColumnName="TelCli" msprop:Generator_ColumnPropNameInRow="TelCli" msprop:Generator_ColumnVarNameInTable="columnTelCli" msprop:Generator_ColumnPropNameInTable="TelCliColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodeGarantie" msprop:Generator_UserColumnName="PeriodeGarantie" msprop:Generator_ColumnPropNameInRow="PeriodeGarantie" msprop:Generator_ColumnVarNameInTable="columnPeriodeGarantie" msprop:Generator_ColumnPropNameInTable="PeriodeGarantieColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

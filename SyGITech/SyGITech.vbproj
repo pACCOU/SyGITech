@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FECA0A4-C6D8-478F-8BE1-9B005E4DBCE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SyGITech.My.MyApplication</StartupObject>
+    <RootNamespace>SyGITech</RootNamespace>
+    <AssemblyName>SyGITech</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SyGITech.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SyGITech.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="connexion.Designer.vb">
+      <DependentUpon>connexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="connexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cryst_periode_de_garentie_par_client.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cryst_periode_de_garentie_par_client.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cry_liste_des_appel_par_client.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cry_liste_des_appel_par_client.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_liste_des _periodes_de_garantie.Designer.vb">
+      <DependentUpon>frm_liste_des _periodes_de_garantie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_liste_des _periodes_de_garantie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_liste_des_appel_par_client.Designer.vb">
+      <DependentUpon>frm_liste_des_appel_par_client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_liste_des_appel_par_client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_factures.Designer.vb">
+      <DependentUpon>Frm_factures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_factures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesAppel.Designer.vb">
+      <DependentUpon>GesAppel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesAppel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesCli.Designer.vb">
+      <DependentUpon>GesCli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesFact.Designer.vb">
+      <DependentUpon>GesFact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesFact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesFich.Designer.vb">
+      <DependentUpon>GesFich.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesFich.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesGroup.Designer.vb">
+      <DependentUpon>GesGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesInterv.Designer.vb">
+      <DependentUpon>GesInterv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesInterv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesMat.Designer.vb">
+      <DependentUpon>GesMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesPro.Designer.vb">
+      <DependentUpon>GesPro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesPro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesPériod.Designer.vb">
+      <DependentUpon>GesPériod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesPériod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesTach.Designer.vb">
+      <DependentUpon>GesTach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesTach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesVeh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesVeh.Designer.vb">
+      <DependentUpon>GesVeh.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificationPasse.Designer.vb">
+      <DependentUpon>ModificationPasse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationPasse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module administraion sqlserver.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GesTech.Designer.vb">
+      <DependentUpon>GesTech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GesTech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppression.Designer.vb">
+      <DependentUpon>Suppression.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suppression.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilisateur.Designer.vb">
+      <DependentUpon>Utilisateur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilisateur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="connexion.resx">
+      <DependentUpon>connexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cryst_periode_de_garentie_par_client.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cryst_periode_de_garentie_par_client.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cry_liste_des_appel_par_client.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cry_liste_des_appel_par_client.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_liste_des _periodes_de_garantie.resx">
+      <DependentUpon>frm_liste_des _periodes_de_garantie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_liste_des_appel_par_client.resx">
+      <DependentUpon>frm_liste_des_appel_par_client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_factures.resx">
+      <DependentUpon>Frm_factures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesAppel.resx">
+      <DependentUpon>GesAppel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesCli.resx">
+      <DependentUpon>GesCli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesFact.resx">
+      <DependentUpon>GesFact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesFich.resx">
+      <DependentUpon>GesFich.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesGroup.resx">
+      <DependentUpon>GesGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesInterv.resx">
+      <DependentUpon>GesInterv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesMat.resx">
+      <DependentUpon>GesMat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesPro.resx">
+      <DependentUpon>GesPro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesPériod.resx">
+      <DependentUpon>GesPériod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesTach.resx">
+      <DependentUpon>GesTach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesVeh.resx">
+      <DependentUpon>GesVeh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificationPasse.resx">
+      <DependentUpon>ModificationPasse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesTech.resx">
+      <DependentUpon>GesTech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppression.resx">
+      <DependentUpon>Suppression.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilisateur.resx">
+      <DependentUpon>Utilisateur.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\menu.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
