@@ -50,7 +50,7 @@ relations incluses) — [`database/intervention.sql`](database/intervention.sql)
 TECHNICIEN ─┬─< GROUPE ─< INTERVENTION ─┬─< POSSEDER >─ CLIENT ─< MATERIEL ─< FICHE >─ VEHICULE
             ├─< TACHE  ─────────────────┴─< FACTURER >─┘
             └─< APPEL >─ CLIENT
-UTILISATEUR (Login, Motpasse, Nom, Prenom, Statu)
+UTILISATEUR (Login, Motpasse, Nom, Prenom, Statut)
 ```
 
 ## Historique
