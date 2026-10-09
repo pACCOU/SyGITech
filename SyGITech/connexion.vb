@@ -24,7 +24,11 @@ Public Class connexion
                 Exit Sub
             End If
         End If
-        parcourir("select Statut from UTILISATEUR where Login ='" & recup(login.Text) & "' and Motpasse='" & recup(Motpass.Text) & "'")
+        ' Requête paramétrée (plus de concaténation de la saisie utilisateur dans le SQL)
+        ObjetCommand = cnx.CreateCommand
+        ObjetCommand.CommandText = "select Statut from UTILISATEUR where Login = @login and Motpasse = @pass"
+        ObjetCommand.Parameters.AddWithValue("@login", login.Text)
+        ObjetCommand.Parameters.AddWithValue("@pass", Motpass.Text)
 
         dr = ObjetCommand.ExecuteReader
         If dr.Read Then
@@ -59,7 +63,8 @@ Public Class connexion
     End Sub
 
     Private Sub connexion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        se_connecter("Data Source=KJEC-PC;Initial Catalog=intervention;Integrated Security=True")
+        ' La chaîne de connexion est lue dans app.config (interventionConnectionString)
+        se_connecter(My.Settings.interventionConnectionString)
         Menus.Show()
         Menus.Enabled = True
         Label1.Visible = False
